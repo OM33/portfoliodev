@@ -1,5 +1,8 @@
 Nuevo portfolio donde expongo algunos proyectos que he hecho hasta ahora
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
@@ -15,3 +18,8 @@ Inside of your Astro project, you'll see the following folders and files:
 │       └── index.astro
 └── package.json
 ```
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/main
