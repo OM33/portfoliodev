@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Nuevo portfolio donde expongo algunos proyectos que he hecho hasta ahora
 <<<<<<< HEAD
 
@@ -21,5 +22,7 @@ Inside of your Astro project, you'll see the following folders and files:
 <<<<<<< HEAD
 =======
 
+=======
+>>>>>>> origin/main
 
 >>>>>>> origin/main
