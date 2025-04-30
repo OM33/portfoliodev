@@ -1,0 +1,46 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    position: "Spanish/English Tutor",
+    company: "Preply Inc.",
+    dates: "2020 – Now",
+    responsabilities: [
+      "Designed and delivered personalized language learning plans for students worldwide.",
+      "Developed digital learning content to improve engagement and retention.",
+      "Applied communication and instructional design skills to simplify complex concepts, enhancing student success.",
+    ],
+  },
+  {
+    position: "Video Editor and Web Design Collaborator",
+    company: "Freelancer / Independent Work",
+    dates: "2019 – Now",
+    responsabilities: [
+      "Developed responsive websites and landing pages using React.js, Angular, and JavaScript.",
+      "Designed UI/UX elements with Bootstrap, Material UI, and Figma.",
+      "Edited videos and created branding materials using Filmora and Photoshop.",
+    ],
+  },
+  {
+    position: "Electronic Engineer / Sales Department",
+    company: "Soluciones Microelectrónicas, C.A",
+    dates: "2016 – 2019",
+    responsabilities: [
+      "Managed and maintained client databases for an e-commerce store.",
+      "Oversaw inventory tracking and logistics, optimizing order fulfillment processes.",
+      "Installed and supervised CCTV security systems and alarm maintenance.",
+    ],
+  },
+];
+---
+
+<ol class="relative mt-8">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

@@ -1,11 +1,45 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Work from "../icons/Work.astro";
+import Code from "../icons/Code.astro";
+import Person from "../icons/Person.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+  title="Olga's Portfolio - Developing Web Developer"
+  description="Creating efficient and engaging mobile and web apps. Web Developer and Content Creator. Specialized in creating unique apps.">
+  <main class="px-4">
+    <SectionContainer>
+      <Hero />
+    </SectionContainer>
+    <SectionContainer>
+      <h2
+        class={`flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white ${Astro.props.className}`}>
+        <Work class="size-8" />
+        Work Experience
+      </h2>
+      <Experience />
+    </SectionContainer>
+    <SectionContainer>
+      <h2
+        class={`flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white ${Astro.props.className}`}>
+        <Code class="size-8" />
+        Projects
+      </h2>
+      <Projects />
+    </SectionContainer>
+    <SectionContainer>
+      <h2
+        class={`flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white ${Astro.props.className}`}>
+        <Person class="size-8" />
+        About Me
+      </h2>
+      <AboutMe />
+    </SectionContainer>
+  </main>
 </Layout>
